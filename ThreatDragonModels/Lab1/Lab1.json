@@ -19,14 +19,17 @@
         "cells": [
           {
             "position": {
-              "x": 150,
-              "y": 440
+              "x": 91.25,
+              "y": 430.00000000000006
             },
             "size": {
-              "width": 112.5,
-              "height": 60
+              "width": 230,
+              "height": 100
             },
             "attrs": {
+              "text": {
+                "text": "Пользователи с правами Guest"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -121,7 +124,7 @@
             "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Пользователи с правами Guest",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -133,14 +136,17 @@
           },
           {
             "position": {
-              "x": 150,
-              "y": 207
+              "x": 131.25,
+              "y": 197.00000000000003
             },
             "size": {
-              "width": 112.5,
-              "height": 60
+              "width": 150,
+              "height": 80
             },
             "attrs": {
+              "text": {
+                "text": "Пользователи"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -235,7 +241,7 @@
             "zIndex": 2,
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Пользователи",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -255,6 +261,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "HAProxy"
+              },
               "topLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
@@ -352,7 +361,7 @@
             "zIndex": 4,
             "data": {
               "type": "tm.Store",
-              "name": "Store",
+              "name": "HAProxy",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -376,6 +385,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Nginx"
+              },
               "topLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
@@ -473,7 +485,7 @@
             "zIndex": 5,
             "data": {
               "type": "tm.Store",
-              "name": "Store",
+              "name": "Nginx",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -485,13 +497,378 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 810,
+              "y": 170
             },
-            "tools": {
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Frontend"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
               "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
+                {
+                  "group": "top",
+                  "id": "0428d743-1737-47a9-ae21-cf70d62c0a51"
+                },
+                {
+                  "group": "right",
+                  "id": "91526d64-a2a5-4a29-bab0-8d47b758a43b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "98493904-491f-4839-8307-8e6ee6ef2ab4"
+                },
+                {
+                  "group": "left",
+                  "id": "05a96feb-4a3d-4359-878c-f24db7e32998"
+                }
+              ]
+            },
+            "id": "29fd4db7-9afc-45d7-b62d-9ceb1fa89bc1",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Store",
+              "name": "Frontend",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 810,
+              "y": 412
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Backend"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "0428d743-1737-47a9-ae21-cf70d62c0a51"
+                },
+                {
+                  "group": "right",
+                  "id": "91526d64-a2a5-4a29-bab0-8d47b758a43b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "98493904-491f-4839-8307-8e6ee6ef2ab4"
+                },
+                {
+                  "group": "left",
+                  "id": "05a96feb-4a3d-4359-878c-f24db7e32998"
+                }
+              ]
+            },
+            "id": "3aff22f8-faf5-4d97-a829-bb10152e60a8",
+            "zIndex": 7,
+            "data": {
+              "type": "tm.Store",
+              "name": "Backend",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 989,
+              "y": 310
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "PostgreSQL"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "0428d743-1737-47a9-ae21-cf70d62c0a51"
+                },
+                {
+                  "group": "right",
+                  "id": "91526d64-a2a5-4a29-bab0-8d47b758a43b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "98493904-491f-4839-8307-8e6ee6ef2ab4"
+                },
+                {
+                  "group": "left",
+                  "id": "05a96feb-4a3d-4359-878c-f24db7e32998"
+                }
+              ]
+            },
+            "id": "ab4de2fb-e209-4056-9d27-82c372bbf7a2",
+            "zIndex": 8,
+            "data": {
+              "type": "tm.Store",
+              "name": "PostgreSQL",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
             }
           }
         ]
