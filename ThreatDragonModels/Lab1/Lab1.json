@@ -891,7 +891,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "HTTP-ответ",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -904,7 +904,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "HTTP-ответ"
             ],
             "id": "082de017-f1be-4571-91f3-0bc6d2242531",
             "source": {
@@ -942,7 +942,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "HTTP-запрос",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -955,7 +955,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "HTTP-запрос"
             ],
             "id": "d9762f0c-135c-4425-a9c6-cf9bcfb82c3b",
             "source": {
@@ -993,7 +993,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "HTTP-запрос",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1006,7 +1006,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "HTTP-запрос"
             ],
             "id": "d0b1034c-a52e-4d9c-8a5e-54c36c88e03c",
             "source": {
@@ -1044,7 +1044,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "HTTP-ответ",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1057,7 +1057,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "HTTP-ответ"
             ],
             "id": "40fb2271-9246-4b70-94b7-4154f3aa8f8c",
             "source": {
@@ -1095,7 +1095,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Проксирование запросов",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1108,7 +1108,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Проксирование запросов"
             ],
             "id": "3f56352f-8a55-4c57-87b2-f91a4e0615fa",
             "source": {
@@ -1146,7 +1146,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "HTTP-ответы от сервера",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1159,7 +1159,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "HTTP-ответы от сервера"
             ],
             "id": "a129c87e-fb79-4779-8e91-f44f8053056a",
             "source": {
@@ -1299,7 +1299,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "REST-API запросы",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1312,7 +1312,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "REST-API запросы"
             ],
             "id": "e166fd88-b02f-4540-9b67-2477690c75a7",
             "source": {
@@ -1350,7 +1350,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "REST-API ответы",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1363,7 +1363,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "REST-API ответы"
             ],
             "id": "a11083fe-3377-4df4-8576-78f05491fe3a",
             "source": {
@@ -1375,6 +1375,10 @@
               "port": "91526d64-a2a5-4a29-bab0-8d47b758a43b"
             },
             "vertices": [
+              {
+                "x": 870,
+                "y": 472
+              },
               {
                 "x": 810,
                 "y": 450
@@ -1401,7 +1405,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Результаты SQL-запросо",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1414,7 +1418,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Результаты SQL-запросо"
             ],
             "id": "972242bb-c202-4c8a-b07a-a3553d77eb8c",
             "source": {
@@ -1452,7 +1456,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "SQL-запросы",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1465,7 +1469,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "SQL-запросы"
             ],
             "id": "20bfec17-4886-4e77-a79a-c466f2edc254",
             "source": {
