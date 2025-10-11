@@ -1474,7 +1474,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1495,12 +1496,31 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "ca26dfdd-7549-47c7-b0da-e96b37ab077a",
+                  "title": "CWE-319",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Передача данных в незашифрованном виде",
+                  "mitigation": "Включить HTTPS, также настроить redirect HTTP → HTTPS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "HTTP-ответ"
@@ -1526,6 +1546,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Сошнин Д.Д.",
-    "threatTop": 2
+    "threatTop": 3
   }
 }
