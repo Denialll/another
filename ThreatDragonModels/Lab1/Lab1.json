@@ -1197,7 +1197,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Статика",
+              "name": "Запросы",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1210,7 +1210,7 @@
               "threats": []
             },
             "labels": [
-              "Статика"
+              "Запросы"
             ],
             "id": "558cb348-debd-40b0-a365-53dd69384887",
             "source": {
@@ -1248,7 +1248,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Запросы",
+              "name": "Статика",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1261,7 +1261,7 @@
               "threats": []
             },
             "labels": [
-              "Запросы"
+              "Статика"
             ],
             "id": "e265ea40-ef74-4380-a874-b7ef6770bcdf",
             "source": {
