@@ -887,25 +887,24 @@
               "threats": [
                 {
                   "id": "75e5dfb6-5047-4d6a-8835-7d638c6cdbf0",
-                  "title": "New STRIDE threat",
+                  "title": "CWE-522",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Critical",
                   "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Хранение паролей без шифрования.",
+                  "mitigation": "Шифровать паролей, использовать Secrets manager (Vault, AWS Secrets Manager).",
                   "modelType": "STRIDE",
-                  "new": true,
+                  "new": false,
                   "number": 4,
                   "score": ""
                 }
-              ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
               ],
-              "name": null
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
