@@ -148,8 +148,8 @@
                 "text": "Пользователи"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -246,9 +246,23 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "20349b6e-acd2-4dff-92a4-ea636701f26f",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 1,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -875,58 +889,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "HTTP-ответ",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "HTTP-ответ"
-            ],
-            "id": "082de017-f1be-4571-91f3-0bc6d2242531",
-            "source": {
-              "cell": "7efd4917-c9da-4b82-ac1b-e22ffc3ed4c4",
-              "port": "05a96feb-4a3d-4359-878c-f24db7e32998"
-            },
-            "target": {
-              "cell": "cfb31068-2edf-4ce0-b69d-53ddf4ae7775",
-              "port": "a538b131-54d0-4807-af3d-0aa29eef9c93"
-            },
-            "vertices": [
-              {
-                "x": 260,
-                "y": 280
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -947,12 +911,31 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "b3483505-0ab6-4fb6-8629-ab90667d889c",
+                  "title": "CWE-319",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Tampering",
+                  "description": "Передача данных в незашифрованном виде",
+                  "mitigation": "Включить HTTPS, также настроить redirect HTTP → HTTPS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "HTTP-запрос"
@@ -1486,12 +1469,63 @@
                 "y": 370
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTP-ответ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "HTTP-ответ"
+            ],
+            "id": "082de017-f1be-4571-91f3-0bc6d2242531",
+            "source": {
+              "cell": "7efd4917-c9da-4b82-ac1b-e22ffc3ed4c4",
+              "port": "05a96feb-4a3d-4359-878c-f24db7e32998"
+            },
+            "target": {
+              "cell": "cfb31068-2edf-4ce0-b69d-53ddf4ae7775",
+              "port": "a538b131-54d0-4807-af3d-0aa29eef9c93"
+            },
+            "vertices": [
+              {
+                "x": 260,
+                "y": 280
+              }
+            ]
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "Сошнин Д.Д.",
-    "threatTop": 0
+    "threatTop": 2
   }
 }
