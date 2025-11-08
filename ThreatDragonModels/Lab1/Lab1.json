@@ -265,11 +265,13 @@
                 "text": "HAProxy"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -366,13 +368,46 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "fde12758-a4dd-4410-8875-946bd67cba5e",
+                  "title": "A05:2021",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Угроза, которая возникает из-за небезопасных настроек на любом уровне стека приложения: от облачной инфраструктуры и веб-сервера до самого приложения и его фреймворков.",
+                  "mitigation": "1. Установка повторяемого и защищенного процесса развертывания (DevSecOps);\n2. Мониторинг и обслуживание.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "4eec387e-266e-4dc9-96e3-53fb2c5c8abf",
+                  "title": "A09:2021",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Сбои в логировании и мониторинге безопасности, например, из-за DDOS-атак",
+                  "mitigation": "1. Внедрение систем мониторинга трафика (например, SIEM), которые могут поднять тревогу при аномальном всплеске запросов.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 3,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -389,10 +424,12 @@
                 "text": "Nginx"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
+                "stroke": "red",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
@@ -490,13 +527,46 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "840fa3db-0496-488b-a28d-7839725617ae",
+                  "title": "A09:2021",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Сбои в логировании и мониторинге безопасности, например, из-за DDOS-атак",
+                  "mitigation": "1. Внедрение систем мониторинга трафика (например, SIEM), которые могут поднять тревогу при аномальном всплеске запросов.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "07f2afa3-e11b-4a23-9517-9fe53a43233d",
+                  "title": "A05:2021",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Угроза, которая возникает из-за небезопасных настроек на любом уровне стека приложения: от облачной инфраструктуры и веб-сервера до самого приложения и его фреймворков.",
+                  "mitigation": "1. Установка повторяемого и защищенного процесса развертывания (DevSecOps);\n2. Мониторинг и обслуживание.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 4,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -637,11 +707,13 @@
                 "text": "Backend"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -738,13 +810,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "7484130f-76b1-4e59-b828-cc21625530e9",
+                  "title": "A01:2021",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Бэкенд неправильно проверяет права доступа для каждого входящего запроса. Например, пользователь может изменить параметр запроса (например, user_id=123 на user_id=124) и получить доступ к чужим данным.",
+                  "mitigation": "1. Использование централизованных middleware/фильтров;\n2. Принудительная проверка прав на стороне сервера.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -892,128 +984,6 @@
                 "denialOfService": 0
               }
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "HTTP-запрос",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "b3483505-0ab6-4fb6-8629-ab90667d889c",
-                  "title": "CWE-319",
-                  "status": "Open",
-                  "severity": "Critical",
-                  "type": "Tampering",
-                  "description": "Передача данных в незашифрованном виде",
-                  "mitigation": "Включить HTTPS, также настроить redirect HTTP → HTTPS.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 2,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "HTTP-запрос"
-            ],
-            "id": "d9762f0c-135c-4425-a9c6-cf9bcfb82c3b",
-            "source": {
-              "x": 220,
-              "y": 151
-            },
-            "target": {
-              "cell": "7efd4917-c9da-4b82-ac1b-e22ffc3ed4c4",
-              "port": "05a96feb-4a3d-4359-878c-f24db7e32998"
-            },
-            "vertices": [
-              {
-                "x": 340,
-                "y": 210
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "HTTP-запрос",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "HTTP-запрос"
-            ],
-            "id": "d0b1034c-a52e-4d9c-8a5e-54c36c88e03c",
-            "source": {
-              "x": 220,
-              "y": 520
-            },
-            "target": {
-              "cell": "7efd4917-c9da-4b82-ac1b-e22ffc3ed4c4",
-              "port": "05a96feb-4a3d-4359-878c-f24db7e32998"
-            },
-            "vertices": [
-              {
-                "x": 350,
-                "y": 490
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -1290,57 +1260,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "REST-API запросы",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "REST-API запросы"
-            ],
-            "id": "e166fd88-b02f-4540-9b67-2477690c75a7",
-            "source": {
-              "x": 782,
-              "y": 340
-            },
-            "target": {
-              "cell": "3aff22f8-faf5-4d97-a829-bb10152e60a8",
-              "port": "05a96feb-4a3d-4359-878c-f24db7e32998"
-            },
-            "vertices": [
-              {
-                "x": 880,
-                "y": 370
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "REST-API ответы",
               "description": "",
               "outOfScope": false,
@@ -1499,6 +1418,148 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "REST-API запросы",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "58fb868b-3b2f-44b7-95e9-38a8f3e09b08",
+                  "title": "A01:2021",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Бэкенд неправильно проверяет права доступа для каждого входящего запроса. Например, пользователь может изменить параметр запроса (например, user_id=123 на user_id=124) и получить доступ к чужим данным.",
+                  "mitigation": "1. Использование централизованных middleware/фильтров;\n2. Принудительная проверка прав на стороне сервера.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "REST-API запросы"
+            ],
+            "id": "e166fd88-b02f-4540-9b67-2477690c75a7",
+            "source": {
+              "x": 782,
+              "y": 340
+            },
+            "target": {
+              "cell": "3aff22f8-faf5-4d97-a829-bb10152e60a8",
+              "port": "05a96feb-4a3d-4359-878c-f24db7e32998"
+            },
+            "vertices": [
+              {
+                "x": 880,
+                "y": 370
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTP-запрос",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "b3483505-0ab6-4fb6-8629-ab90667d889c",
+                  "title": "CWE-319",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Tampering",
+                  "description": "Передача данных в незашифрованном виде",
+                  "mitigation": "Включить HTTPS, также настроить redirect HTTP → HTTPS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "HTTP-запрос"
+            ],
+            "id": "d9762f0c-135c-4425-a9c6-cf9bcfb82c3b",
+            "source": {
+              "x": 220,
+              "y": 151
+            },
+            "target": {
+              "cell": "7efd4917-c9da-4b82-ac1b-e22ffc3ed4c4",
+              "port": "05a96feb-4a3d-4359-878c-f24db7e32998"
+            },
+            "vertices": [
+              {
+                "x": 340,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "HTTP-ответ",
               "description": "",
               "outOfScope": false,
@@ -1525,7 +1586,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 3,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1548,12 +1609,68 @@
                 "y": 280
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTP-запрос",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "HTTP-запрос"
+            ],
+            "id": "d0b1034c-a52e-4d9c-8a5e-54c36c88e03c",
+            "source": {
+              "x": 220,
+              "y": 520
+            },
+            "target": {
+              "cell": "7efd4917-c9da-4b82-ac1b-e22ffc3ed4c4",
+              "port": "05a96feb-4a3d-4359-878c-f24db7e32998"
+            },
+            "vertices": [
+              {
+                "x": 350,
+                "y": 490
+              }
+            ]
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "Сошнин Д.Д.",
-    "threatTop": 4
+    "threatTop": 11
   }
 }
